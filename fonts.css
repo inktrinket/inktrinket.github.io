@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+:root,::before,::after{
+    --mod: 0.28rem;
+    --txt-lh: 2.4rem;
+    --txt-h1: 2.6rem;
+    --txt-h2: calc(var(--txt-h1) - var(--mod));
+    --txt-h3: calc(var(--txt-h2) - var(--mod));
+    --txt-h4: calc(var(--txt-h3) - var(--mod));
+    --txt-h5: calc(var(--txt-h4) - var(--mod));
+    --txt-h6: calc(var(--txt-h5) - var(--mod));
+    --txt-p: var(--txt-h6);
+    --txt-lh-p: calc(var(--txt-lh) / 1.15);
+}
+
+/* 4K */
+@media only screen and (min-width: 2500px){ /* 2500px or bigger */
+    :root{
+        --mod: 0.285rem;
+        --txt-lh: 2.7rem;
+        --txt-h1: 3rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 1051px) and (max-width: 1366px) and (orientation: landscape){ /* between 1051px and 1366px */
+    :root{
+        --txt-lh: 2.2rem;
+        --txt-h1: 2.4rem;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 1050px){ /* 1050px or smaller */
+    :root{
+        --txt-lh: 2.2rem;
+        --txt-h1: 2.4rem;
+    }
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    position: relative;
+    font-family: "peridot-pe-variable", sans-serif;
+    line-height: var(--txt-lh);
+}
+h1,h2,h3,h4,h5,h6,p{
+    position: relative;
+    font-family: "peridot-pe-variable", sans-serif;
+    line-height: var(--txt-lh);
+}
+h1{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "wght" 800, "wdth" 100, "ital" 0;
+    font-size: var(--txt-h1);
+    line-height: calc(var(--txt-lh) + calc(var(--txt-lh) /  2));
+}
+h2{
+    font-variation-settings: "wght" 300, "wdth" 100, "ital" 0;
+    font-size: var(--txt-h2);
+}
+h3{
+    font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
+    font-size: var(--txt-h3);
+}
+h4{
+    font-variation-settings: "wght" 300, "wdth" 100, "ital" 0;
+    font-size: var(--txt-h4);
+}
+h5{
+    font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
+    font-size: var(--txt-h5);
+}
+h6{
+    font-variation-settings: "wght" 300, "wdth" 100, "ital" 0;
+    font-size: var(--txt-h6);
+}
+p{
+    font-variation-settings: "wght" 300, "wdth" 100, "ital" 0;
+    font-size: var(--txt-p);
+    line-height: var(--txt-lh-p);
+}
+p strong{font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;}
+p em{font-variation-settings: "wght" 300, "wdth" 100, "ital" 300;}
+p strong em, p em strong{font-variation-settings: "wght" 400, "wdth" 100, "ital" 300;}

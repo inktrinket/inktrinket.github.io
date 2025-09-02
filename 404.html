@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404! - inktrinket</title>
+
+    <link rel="preload" href="/main.js" as="script"/>
+    <link rel="preload" href="/core.css" as="style"/>
+    <link rel="preload" href="/fonts.css" as="style"/>
+    
+    <script type="text/javascript" src="/main.js"></script>
+    <link href="https://use.typekit.net/qko7viz.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="/core.css">
+    <link rel="stylesheet" href="/fonts.css">
+
+    <style type="text/css">
+
+        /* General grid */
+        .grid-main{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            place-items: center;
+            gap: var(--space-small);
+            max-width: 50%;
+            margin: 0 auto;
+            height: 100vh;
+        }
+
+        .grid-main > div{
+            text-align: center;
+            display: grid;
+            gap: var(--space-largest);
+            position: relative;
+        }
+        .grid-main > div a{
+            max-width: 25%;
+            margin-inline: auto;
+        }
+        .grid-main > div a img{
+            max-width: 100%;
+        }
+        .grid-main > div h1{
+            font-variation-settings: "wght" 600, "wdth" 100, "slnt" 0;
+            font-size: calc(var(--txt-h1) * 2);
+        }
+
+        .q-mark,.q-mark::before,.q-mark::after{
+            --font-size: calc(var(--txt-h1));
+            --font-mod: 1rem;
+
+            position: absolute;
+            font-family: "acumin-variable", sans-serif;
+            font-size: var(--font-size);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            user-select: none;
+        }
+        .q-mark::before,.q-mark::after{
+            content: "?";
+        }
+
+        .q-mark__l{
+            font-variation-settings: "wght" 200, "wdth" 100, "slnt" 0;
+            top: 50%;
+            left: 35%;
+        }
+        .q-mark__l::before{
+            font-variation-settings: "wght" 100, "wdth" 100, "slnt" 0;
+            top: 150%;
+            left: -30%;
+            font-size: calc(var(--font-size) - var(--font-mod));
+        }
+        .q-mark__l::after{
+            font-variation-settings: "wght" 400, "wdth" 100, "slnt" 0;
+            top: 105%;
+            left: 180%;
+            font-size: calc(var(--font-size) + var(--font-mod));
+        }
+        
+        .q-mark__r{
+            font-variation-settings: "wght" 400, "wdth" 100, "slnt" 0;
+            top: 50%;
+            left: 65%;
+            font-size: calc(var(--font-size) + var(--font-mod));
+        }
+        .q-mark__r::before{
+            font-variation-settings: "wght" 200, "wdth" 100, "slnt" 0;
+            top: 130%;
+            left: 110%;
+        }
+        .q-mark__r::after{
+            font-variation-settings: "wght" 100, "wdth" 100, "slnt" 0;
+            top: 90%;
+            left: 230%;
+            font-size: calc(var(--font-size) - var(--font-mod));
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="main_wrapper">
+        <!-- Night Light -->
+        <input id="night-light" type="checkbox"><label id="night-light-label" for="night-light" data-invert-dark="true"></label>
+
+        <div class="grid-main">
+            <div>
+                <div class="q-mark q-mark__l">?</div>
+                <a href="/index.html" title="go home" aria-label="Return to home page"><img src="/img/error.png" alt="inktrinket go home" data-invert-dark="true"></a>
+                <div class="q-mark q-mark__r">?</div>
+                <h1>404?</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+.disabled{display: none;}
+
+#main_wrapper{
+    min-height: 100vh !important;
+}
+
+/* General grid */
+.grid-main{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+        "video info";
+    gap: var(--space-large);
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+#grid-main__hero-gallery{
+    grid-area: video;
+    display: grid;
+    gap: var(--space-smallest);
+    place-items: start;
+    align-content: flex-start;
+    grid-auto-flow: column;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+}
+
+.hero-gallery__image-container{
+    position: relative;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.hero-gallery__image-container *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: var(--space-smallest);
+}
+
+.hero-gallery__image-reel{
+    width: 100%;
+}
+
+#hero-image{
+    cursor: zoom-in;
+}
+
+#image-reel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--space-smallest);
+    overflow-x: auto;
+    max-height: 100%;
+    padding-bottom: var(--space-smallest);
+}
+
+.reel-item{
+    cursor: pointer;
+}
+
+.reel-thumb{
+    border-radius: var(--space-smallest);
+    height: calc(var(--space-largest) * 2);
+}
+
+#blackout{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 150;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+#blackout.zoomed{
+    opacity: 0.5;
+    pointer-events: auto;
+    user-select: auto;
+}
+
+#image-zoom{
+    position: fixed;
+
+    top: 50vh;
+    left: 50vw;
+    top: 50lvh;
+    left: 50lvw;
+
+    aspect-ratio: 4 / 3;
+    width: 55%;
+    z-index: 150;
+    transform: translate(-50%, -100%);
+    opacity: 0;
+    transition: transform 500ms ease, opacity 500ms ease;
+    pointer-events: none;
+    user-select: none;
+    display: grid;
+    place-items: center;
+}
+#image-zoom.zoomed{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+#image-zoom img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grid-main__info{
+    grid-area: info;
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+    gap: var(--space-small);
+    place-items: start;
+}
+
+.grid-main__heading{
+    grid-area: a;
+    line-height: calc(var(--txt-lh) * 1.25);
+}
+.grid-main__paragraph{
+    grid-area: b;
+    place-self: start;
+}
+.grid-main__programs{
+    grid-area: c;
+    display: grid;
+    gap: var(--space-smallest);
+    width: 100%;
+}
+
+#program-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: start;
+    gap: calc(var(--space-smallest) / 2);
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 50%;
+}
+#program-list li img{
+    max-width: var(--space-largest);
+}
+
+/* 1K + 4K Portrait */
+@media only screen and (min-width: 1051px) and (max-width: 1440px) and (orientation: portrait){
+    .grid-main{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "video"
+            "info";
+        max-width: 75%;
+        padding-block: calc(var(--space-largest) * 2);
+    }
+
+    #image-zoom{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Tablet & Phone */
+@media only screen and (max-width: 1050px){
+    .grid-main{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "video"
+            "info";
+        max-width: 80%;
+        padding-block: calc(var(--space-largest) * 2);
+    }
+
+    #image-zoom{
+        width: 100%;
+        height: 100%;
+    }
+
+    @media only screen and (orientation: landscape){
+        .grid-main{
+            max-width: 60%;
+        }
+        #image-zoom{
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+
+@supports not (aspect-ratio: 4 / 3) { /* Fallback for aspect-ratio */
+    #image-zoom::before {
+        float: left;
+        padding-top: 33.33%;
+        content: "";
+    }
+    #image-zoom::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}

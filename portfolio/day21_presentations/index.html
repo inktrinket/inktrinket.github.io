@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY21 Visual Presentations - inktrinket</title>
+    <meta name="description" content="I created a series of visual presentations for DAY21, an electronica musician associated with the musical & visual art group Millennium Strike.">
+    
+    <script type="text/javascript">
+        const type = "PROFESSIONAL";
+    </script>
+    
+    <link rel="preload" href="/main.js" as="script"/>
+    <link rel="preload" href="/core.css" as="style"/>
+    <link rel="preload" href="/fonts.css" as="style"/>
+    <link rel="preload" href="/portfolio/proj_page.css" as="style"/>
+    
+    <script type="text/javascript" src="/main.js"></script>
+    <link href="https://use.typekit.net/qko7viz.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="/core.css">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/portfolio/proj_page.css">
+    
+    <style type="text/css">
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="main_wrapper">
+        <div id="blackout" onclick="removeZoom(this)"></div>
+
+        <div id="image-zoom">
+            <img src="" alt="full image">
+        </div>
+        
+        <!-- Borders -->
+        <div class="site_frame frame_left" data-invert-dark="true"></div>
+        <div class="site_frame frame_right" data-invert-dark="true"></div>
+
+        <!-- Night Light -->
+        <input id="night-light" type="checkbox"><label id="night-light-label" for="night-light" title="toggle color theme" aria-label="Toggle color theme" data-invert-dark="true"></label>
+
+        <!-- Hamburger -->
+        <div id="mobile-blackout"></div>
+        <input id="hamburger" type="checkbox"><label id="hamburger-label" for="hamburger" title="open navigation" aria-label="open navigation" data-invert-dark="true"></label>
+        <!-- Heading -->
+        <header id="header_flex" aria-label="Site header">
+            <nav>
+                <ul class="header_nav_grid">
+                    <li><a href="/index.html" title="go home" aria-label="Return to home page"><img class="header_icon" src="/svg/inktrinket_logo_v2.svg" width="100px" height="100px" alt="inktrinket go home" data-invert-dark="true"></a></li>
+                    <li><a href="/about.html" aria-label="About page">about</a></li>
+                    <li class="header_nav_hover_list" aria-label="Portfolio" onclick="">
+                        <p>portfolio</p>
+                        <ul class="header_portfolio_fold">
+                            <li><a href="/portfolio_professional.html" aria-label="Professional portfolio">professional</a></li>
+                            <li><a href="/portfolio_personal.html" aria-label="Personal work portfolio">personal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact.html" aria-label="Contact page">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid-main">
+            <div id="grid-main__hero-gallery">
+                <div class="hero-gallery__image-container">
+                    <iframe id="hero-video" class="" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                        src="">
+                    </iframe>
+                    <img id="hero-image" class="" src="" onclick="setZoom(this)">
+                </div>
+                <nav class="hero-gallery__image-reel">
+                    <ul id="image-reel">
+
+                    </ul>
+                </nav>
+            </div>
+
+            <main class="grid-main__info">
+                <h1 class="grid-main__heading">DAY21 Visual Presentations</h1>
+                <p class="grid-main__paragraph">I created a series of visual presentations for DAY21, an electronica musician associated with the musical & visual art group Millennium Strike. These visual presentations focus on experimental and flashy imagery using various image and video-based assets. They were showcased in various ways, including being live-streamed on Twitch, and being utilized in live performance events.</p>
+                <div class="grid-main__programs">
+                    <h3>Programs Used</h3>
+                    <ul id="program-list">
+                        
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../proj_page.js"></script>
+</body>
+</html>

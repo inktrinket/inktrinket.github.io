@@ -1,0 +1,278 @@
+{
+    "PERSONAL": {
+        "thxmcbs": {
+            "title": "\"THXMCBS\"",
+            "subtitle": "Photo/Video Collage",
+            "tags": [
+                "music",
+                "artwork",
+                "photography",
+                "collage"
+            ],
+            "programs": [
+                "premiere"
+            ],
+            "videos": [
+                "kvL3CaaSiKk"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
+                }
+            ]
+        },
+        "mob_attacks": {
+            "title": "The MOB Attacks",
+            "subtitle": "Gameplay Video Series",
+            "tags": [
+                "gameplay",
+                "lethal company",
+                "the mob",
+                "commentary"
+            ],
+            "programs": [
+                "premiere",
+                "photoshop"
+            ],
+            "videos": [
+                "OM942qQ9aW4",
+                "sgGMvmeCGmQ"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "First video thumbnail"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "Second video thumbnail"
+                }
+            ]
+    
+        },
+        "steamvr_tutorial": {
+            "title": "OpenVR2Key Tutorial",
+            "subtitle": "Tutorial Video",
+            "tags": [
+                "How to Control Your Keyboard with your VR Controllers",
+                "tutorial",
+                "steamvr",
+                "guide",
+                "commentary"
+            ],
+            "programs": [
+                "premiere",
+                "aftereffects",
+                "photoshop",
+                "illustrator"
+            ],
+            "videos": [
+                "f9ZOBYzTpUQ"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
+                }
+            ]
+        },
+        "fishing": {
+            "title": "\"fishing\"",
+            "subtitle": "Animated Short",
+            "tags": [
+                "animation",
+                "artwork",
+                "3d"
+            ],
+            "programs": [
+                "premiere",
+                "blender"
+            ],
+            "videos": [
+                "7vNQ_vdN_Q0"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
+                }
+            ]
+        }
+    },
+    "PROFESSIONAL": {
+        "inktrinket_video": {
+            "title": "\"inktrinket.video\"",
+            "subtitle": "Web Project",
+            "tags": [
+                "website",
+                "web design",
+                "graphic design",
+                "project planning"
+            ],
+            "programs": [ 
+                "photoshop",
+                "illustrator" 
+            ],
+            "videos": [
+
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Iteration 1"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "Iteration 2"
+                },
+                {
+                    "image": "03.jpg",
+                    "title": "Iteration 3"
+                },
+                {
+                    "image": "04.jpg",
+                    "title": "Iteration 4"
+                },
+                {
+                    "image": "05.jpg",
+                    "title": "Iteration 5"
+                },
+                {
+                    "image": "06.jpg",
+                    "title": "Iteration 6"
+                },
+                {
+                    "image": "07.jpg",
+                    "title": "Iteration 7"
+                },
+                {
+                    "image": "08.jpg",
+                    "title": "Mood Board"
+                },
+                {
+                    "image": "09.jpg",
+                    "title": "Iteration Design Board"
+                }
+            ]
+        },
+        "dj_neo_destiny": {
+            "title": "DJ Neo Destiny",
+            "subtitle": "Visual Presentations",
+            "tags": [
+                "music",
+                "artwork",
+                "mixed media",
+                "live"
+            ],
+            "programs": [
+                "premiere",
+                "photoshop"
+            ],
+            "videos": [
+                "PY1GI4Bo7Uo"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "First Thumbnail"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "Second Thumbnail"
+                },
+                {
+                    "image": "03.jpg",
+                    "title": "Third Thumbnail"
+                },
+                {
+                    "image": "04.jpg",
+                    "title": "Fourth Thumbnail"
+                }
+            ]
+        },
+        "lucihaslanded_gameplay": {
+            "title": "LuciHasLanded",
+            "subtitle": "Gameplay Videos",
+            "tags": [
+                "gameplay",
+                "commentary",
+                "lethal company",
+                "five nights at freddy's: help wanted"
+            ],
+            "programs": [
+                "premiere",
+                "photoshop"
+            ],
+            "videos": [
+                "ifSlFva2bSQ",
+                "crzyC-fwxJE"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Lethal company video thumbnail"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "FNAF: Help wanted video thumbnail"
+                }
+            ]
+        },
+        "rabbit_hole": {
+            "title": "The Rabbit Hole",
+            "subtitle": "Podcast Videos",
+            "tags": [
+                "podcast"
+            ],
+            "programs": [
+                "premiere",
+                "audition",
+                "photoshop"
+            ],
+            "videos": [
+                "0GMpd0P6Yjc"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
+                }
+            ]
+        },
+        "day21_presentations": {
+            "title": "DAY21",
+            "subtitle": "Visual Presentations",
+            "tags": [
+                "music",
+                "artwork",
+                "mixed media",
+                "live"
+            ],
+            "programs": [
+                "premiere",
+                "photoshop",
+                "blender"
+            ],
+            "videos": [
+                "pr7Z7ntzoUY",
+                "wZdugQuDjoY",
+                "liRyKcRLuxU"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Skydeath Presentation thumbnail"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "Skydeath Live thumbnail"
+                },
+                {
+                    "image": "03.jpg",
+                    "title": "Recovery Signal thumbnail"
+                }
+            ]
+        }
+    }
+}
